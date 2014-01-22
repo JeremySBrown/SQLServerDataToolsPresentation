@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{1df9a2b6-ddec-4992-8bd6-90255ac2b6e1}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureDatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -110,6 +110,7 @@
     <Folder Include="dbo\Views\" />
     <Folder Include="Scripts" />
     <Folder Include="Scripts\Post Deployment" />
+    <Folder Include="CLR" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\InternetAddresses.sql" />
@@ -122,5 +123,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\Post Deployment\InitInternetAddressTypes.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
 </Project>
